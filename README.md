@@ -23,8 +23,8 @@ Dependencies
 node.js
 
 
-event sequence object 
----------------------
+The Event Sequence Object 
+-------------------------
 
 The EventScheduler constructor expects an object containing a valid 
 sequence object. 
