@@ -1,49 +1,46 @@
-programevents
-=============
+eventscheduler
+==============
 
 Emit a (possibly recursive) sequence of events
 
 Use
 ---
 
-var Program = require('./programevents.js').Program;
+var EventScheduler = require('./programevents.js').EventScheduler;
 
-var program = new Program(myseqobject);
+var eventscheduler = new eventscheduler(myseqobject);
 
 
 function done() {
 
 };
 
-program.start(done);
+eventscheduler.start(done);
 
 Dependencies
 ------------
 
-node.js must be installed. Download the latest stable version from www.nodejs.org.
+node.js
 
-Also, the xmlhttprequest package for node.js must be installed.  After node is 
-installed, run
-
-% npm install xmlhttprequest
 
 event sequence object 
 ---------------------
 
-The programevents function expects an object containing a valid 
+The EventScheduler constructor expects an object containing a valid 
 sequence object. 
 
 The following is the syntax of a valid sequence object:   
-
+```javascript
 <sequence> ::= { sequence : [<command>*], count: <number> } 
 
  <command> ::= <event> | <sequence>
 
    <event> ::= { id : <string> , delay: <number> }
-
+```
  
 for example, 
 
+```javascript
 var seq = {
     sequence : [
         {id : "event1", delay : 300},
@@ -57,5 +54,5 @@ var seq = {
     ],
     count : 1
 };
-
+```
 
