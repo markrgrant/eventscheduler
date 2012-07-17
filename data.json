@@ -1,0 +1,19 @@
+{"sequence":
+    [{"id":"event1","delay":400},
+     {"id":"event2","delay":800},
+     {"id":"event3","delay":1200},
+     {"sequence":
+         [{"id":"subevent1","delay":1600}], 
+      "count":
+         10
+     }, 
+     {"sequence":
+        [{"id":"subevent2","delay":800}], 
+     "count":
+       10 
+    } 
+ 
+    ],
+ "count":
+  1 
+}
