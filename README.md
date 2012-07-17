@@ -6,9 +6,9 @@ Emit a (possibly recursive) sequence of events
 Use
 ---
 
-var EventScheduler = require('./programevents.js').EventScheduler;
+var EventScheduler = require('./eventscheduler.js').EventScheduler;
 
-var eventscheduler = new eventscheduler(myseqobject);
+var eventscheduler = new EventScheduler(myseqobject);
 
 
 function done() {
