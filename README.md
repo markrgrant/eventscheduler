@@ -1,7 +1,7 @@
 eventscheduler
 ==============
 
-Emit a (possibly recursive) sequence of events
+Emit a (possibly hierarchical) sequence of events
 
 Use
 ---
