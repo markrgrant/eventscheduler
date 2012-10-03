@@ -10,9 +10,9 @@ var EventScheduler = require('./eventscheduler.js').EventScheduler;
 
 var eventscheduler = new EventScheduler(myseqobject);
 
-eventschedule.on("eventA", eventAHandler);
+eventscheduler.on("eventA", eventAHandler);
 
-eventschedule.on("eventB", eventBHandler);
+eventscheduler.on("eventB", eventBHandler);
 
 function done() {
 
